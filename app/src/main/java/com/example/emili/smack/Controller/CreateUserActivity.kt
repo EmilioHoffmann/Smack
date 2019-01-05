@@ -1,9 +1,11 @@
-package com.example.emili.smack
+package com.example.emili.smack.Controller
 
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.emili.smack.R
+import com.example.emili.smack.Services.AuthService
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 
@@ -48,7 +50,12 @@ class CreateUserActivity : AppCompatActivity() {
     }
 
     fun createUserClicked(view: View) {
+        AuthService.registerUser(this, "eme", "123"){complete ->
+            if (complete){
 
+            }
+
+        }
     }
 
 
