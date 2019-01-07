@@ -1,9 +1,10 @@
-package com.example.emili.smack
+package com.example.emili.smack.Controller
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.emili.smack.R
 
 class LoginActivity : AppCompatActivity() {
 
